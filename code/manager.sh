@@ -7,6 +7,10 @@ GREEN='\033[0;32m'
 BLUE='\033[0;34m'
 YELLOW='\033[1;33m'
 
+# GLOBAL BASH TEXT FORMATS
+BOLD=$(tput bold)
+NF=$(tput sgr0)
+
 # LET THE USER CHOOSE A FREQUENCY
 chooseFreq(){
 	echo "FM frequencies range from 88 to 108 (megahertz)."
@@ -40,11 +44,7 @@ testMusic(){
 		listMusic
 		echo
 		echo "Which one do you want to play?"
-		statusMessage
-		#if [ $invalid = true ]		# CHECK IF USER INPUT IS INCORRECT
-		#then
-			#echo "Invalid option. Please choose another one."
-		#fi
+		statusMessage	
 		read PiRadio_name
 		export PiRadio_name
 		SM_invalid=false
@@ -77,8 +77,8 @@ testMusic(){
 					fi
 					clear
 					unset PiRadio_name
-					PiRadio_time=10
 					string="${RED}ERROR:${NC} That playlist or artist isnt available on the Pi yet. Please choose another one!\nIf you dont want to play any song just hit 0 and ENTER."
+					PiRadio_time=10
 					pressNoKey=false
 					useCountdown=false
 					newLine=true
@@ -207,7 +207,7 @@ countdown(){
 		fi
 		if [ $hit0toExit = true ]
 		then
-			echo "Press "0" to exit this message."
+			printf "Press ${GREEN}0${NC} to exit this message."
 			read -n1 opCountdown
 		
 			case $opCountdown in
@@ -226,6 +226,7 @@ countdown(){
 	useCountdown=false
 	newLine=false
 	hit0toExit=false
+	continue
 }
 
 # COMMANDS THAT HAPPEN WHEN EXITING PiRadio
@@ -282,7 +283,7 @@ helpFiles(){
 	printf " ${GREEN}End of help file${NC} "
 	echo "-------"
 	echo
-	echo "When you're done reading hit "0" to exit."
+	printf "When you're done reading press ${GREEN}0${NC} to exit.\n"
 	read -n1 opHelp
 	
 	while true

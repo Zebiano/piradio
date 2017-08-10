@@ -15,8 +15,6 @@ SM_updaterFinished=false
 SM_stoppedMusic=false
 SM_finishDownload=false
 SM_finishConvert=false
-restart=false
-
 getDir
 cd $PiRadio_DIR/fm_transmitter-master
 make >/dev/null
@@ -234,7 +232,13 @@ do
 			freqUsed
 			echo
 			listMusic
-			sleep 5	
+			string=""
+			PiRadio_time=10
+			pressNoKey=false
+			useCountdown=false
+			newLine=false
+			hit0toExit=true
+			countdown
 			;;
 		3)
 			echo "One moment plz..."
