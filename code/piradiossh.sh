@@ -43,9 +43,8 @@ do
 	echo "Menu:"
 	echo "1 - Choose music"
 	echo "2 - List music"
-	echo "3 - Change frequency"
-	echo "4 - Load new music"
-	echo "5 - Update screen"
+	echo "3 - Load new music"
+	echo "4 - Update screen"
 	echo
 	echo "s - Stop current song"
 	echo
@@ -112,16 +111,7 @@ do
 						clear
 						echo "Working on updates..."
 						echo
-						UP_youtube_dl
-						echo
-						UP_screen
-						echo
-						UP_fm_transmitter
-						echo
-						UP_mpg123
-						echo
-						UP_dialog
-						echo
+						UP_all
 						SM_updaterFinished=true
 						sleep 3
 						;;
@@ -172,7 +162,7 @@ do
 				
 				# MENU
 				echo "Menu:"
-				echo "1 - Set/Change Default frequency"
+				echo "1 - Change frequency"
 				echo
 				echo "0 - Exit Updater"
 				echo "h - Help"
@@ -193,10 +183,7 @@ do
 						continue 2
 						;;
 					1)
-						clear
-						setDefaultFreq
-						
-						clear
+						chooseFreq
 						;;
 					*)
 						SM_invalid=true
@@ -241,11 +228,6 @@ do
 			countdown
 			;;
 		3)
-			echo "One moment plz..."
-			clear
-			chooseFreq
-			;;
-		4)
 			clear
 			echo "One moment plz..."
 			getTempDir
@@ -303,7 +285,7 @@ do
 				esac
 			done
 			;;
-		5)
+		4)
 			continue
 			;;
 		*)

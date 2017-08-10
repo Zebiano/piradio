@@ -11,6 +11,10 @@ YELLOW='\033[1;33m'
 BOLD=$(tput bold)
 NF=$(tput sgr0)
 
+checkSoftware(){
+	echo hi
+}
+
 # LET THE USER CHOOSE A FREQUENCY
 chooseFreq(){
 	echo "FM frequencies range from 88 to 108 (megahertz)."
@@ -245,6 +249,13 @@ PiRadioExit(){
 }
 
 updater(){
+	UP_all(){
+		UP_youtube_dl
+		UP_screen
+		UP_fm_transmitter
+		UP_mpg123
+		UP_dialog
+	}
 	UP_youtube_dl(){
 		youtube-dl -U
 		sleep 1
