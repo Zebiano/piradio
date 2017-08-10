@@ -15,6 +15,7 @@ SM_updaterFinished=false
 SM_stoppedMusic=false
 SM_finishDownload=false
 SM_finishConvert=false
+SM_changedFrequency=false
 getDir
 cd $PiRadio_DIR/fm_transmitter-master
 make >/dev/null
@@ -155,6 +156,7 @@ do
 			clear
 			echo "One moment plz..."
 			SM_invalid=false
+			SM_changedFrequency=true
 			
 			while true
 			do
@@ -183,7 +185,10 @@ do
 						continue 2
 						;;
 					1)
+						clear
 						chooseFreq
+						SM_changedFrequency=true
+						statusMessage
 						;;
 					*)
 						SM_invalid=true

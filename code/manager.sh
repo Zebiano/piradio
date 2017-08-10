@@ -188,6 +188,9 @@ statusMessage(){
 	elif [ $SM_finishConvert = true ]
 	then
 		printf "${YELLOW}Finished converting.${NC}\n"
+	elif [ $SM_changedFrequency = true ]
+	then
+		printf "${YELLOW}Changed frequency.${NC}\n"
 	fi
 }
 
