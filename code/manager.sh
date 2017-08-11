@@ -53,10 +53,11 @@ testMusic(){
 		export PiRadio_name
 		SM_invalid=false
 		echo
-		# IF NAME EXISTS, THEN PLAY THAT FOLDER
+		# IF PiRadio_name ISNT AN EMPTY LINE
 		if [ "$PiRadio_name" != "" ]
 		then
-			if [ -d "$PiRadio_DIR/music/"$PiRadio_name"" ]
+			# IF PiRadio_name EXISTS, THEN PLAY THAT FOLDER
+			if [ -d "$PiRadio_DIR/music/$PiRadio_name" ]
 			then
 				killMusic
 				echo "Starting piRadio: "$PiRadio_name" at $PiRadio_freq FM, 16 bits"
@@ -65,7 +66,7 @@ testMusic(){
 				break
 			# ELSE SAY IT DOESNT EXIST OR PLAY A SONG AT THE ROOT DIR
 			else
-				if [ -e "$PiRadio_DIR/music/"$PiRadio_name.wav"" ]
+				if [ -e "$PiRadio_DIR/music/$PiRadio_name.wav" ]
 				then
 					killMusic
 					echo "Starting piRadio: "$PiRadio_name" at $PiRadio_freq FM, 16 bits"
