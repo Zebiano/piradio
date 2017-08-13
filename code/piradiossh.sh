@@ -99,8 +99,7 @@ do
 				
 				case $opUpdater in
 					h)
-						helpFile=updater.txt
-						helpFiles
+						man $PiRadio_DIR/code/help_files/updater
 						;;
 					0)
 						clear

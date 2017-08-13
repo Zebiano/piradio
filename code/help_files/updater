@@ -1,0 +1,55 @@
+.\" Manpage for the Updates menu in PiRadio.
+.\" Made by @Zebiano (https://github.com/Zebiano). English is not my first language, so please don't be too mean with me and my grammatical errors!
+.TH PiRadio 1 "11 August 2017" "1.0" "PiRadio man page"
+.SH NAME
+piradio \- Portable radio FM transmitter with custom features.
+.SH SYNOPSIS
+1) Update all
+.br
+2) Update Youtube-dl
+.br
+3) Update screen
+.br
+4) Update fm_transmitter
+.br
+5) Update mpg123
+.br
+6) Update dialog
+.br
+0) Exit Updater
+.br
+h) Help
+.br
+.SH DESCRIPTION
+With this menu you're able to install/update all or individual software necessary for the PiRadio to run. For now dialog is not necessary and the initial boot won't install it. You can still install it if you want.
+.SH DESCRIPTION - OPTIONS
+.B Update all
+This option will automatically intall/update every single software needed for the PiRadio.
+.br
+.B Update Youtube-dl 
+installs/Updates Youtube-dl. More on it here: https://rg3.github.io/youtube-dl/
+.br
+.B Update screen 
+installs/Updates screen. More on it here: https://packages.debian.org/jessie/misc/screen
+.br
+.B Update fm_transmitter 
+installs/Updates fm_transmitter. More on it here: https://github.com/markondej/fm_transmitter
+.br
+.B Update mpg123 
+installs/Updates mpg123. More on it here: https://www.mpg123.de
+.br
+.B Update dialog 
+installs/Updates dialog. More on it here: https://packages.debian.org/sid/dialog
+.br
+.B Exit Updater 
+quits Updater and returns to the previous menu.
+.br
+.B Help 
+displays this message.
+.br
+.SH BUGS
+All bugs listed below are being worked on. I dont guarantee a fix for every single one. If there are no bugs listed, be happy about it! :D
+.PP
+- While using "s) Stop the current song" the radio doesn't fully stop the current song. The song isn't being played anymore, though there's still a white noise playing on the radio.
+.SH AUTHOR
+Zebiano (https://github.com/Zebiano)

@@ -20,6 +20,12 @@ Dependencies:
 5) mpg123 (mp3 to wav converter)
 
 
+
+To-dos:
+
+1) Create an uninstaller
+
+
 –--- WORK IN PROGRESS -----
 
 This is the MusicLoader. Here you can download or import new songs into your music folder. It's also possible to do this manually: naviagte to /piradio/music/ and put your songs in there. But remember that the PiRadio only reads .wav files (not .mp3). That being said, there's an option that lets you convert .mp3 into .wav. I don't recommend trying to convert the files yourself, there's a slight chance that the PiRadio doesn't recognize them only to say they're corrupted.

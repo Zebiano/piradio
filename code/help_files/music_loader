@@ -22,8 +22,8 @@ asks you for an URL of a video, song, playlist etc to download it, convert it to
 .B Convert .mp3 to .wav 
 converts any song in .mp3 format into a playable .wav song for the PiRadio. Note that the .mp3 file has to be inside the /music/downloads folder.
 .br
-.B Exit PiRadio 
-quits PiRadio and stops any song playing at that moment.
+.B Exit MusicLoader 
+quits MusicLoader and returns to the previous menu.
 .br
 .B Help 
 displays this message.

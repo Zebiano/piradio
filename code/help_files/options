@@ -6,7 +6,7 @@ piradio \- Portable radio FM transmitter with custom features.
 .SH SYNOPSIS
 1) Change frequency
 .br
-0) Exit PiRadio
+0) Exit Options
 .br
 h) Help
 .br
@@ -15,8 +15,8 @@ This is the options menu of the PiRadio. Here you can set some settings that aff
 .SH DESCRIPTION - OPTIONS
 .B Change frequency
 lets you change the current frequency that songs will be played. Keep in mind this does not affect already playing songs!
-.B Exit PiRadio 
-quits PiRadio and stops any song playing at that moment.
+.B Exit Options 
+quits Options and returns to the previous menu.
 .br
 .B Help 
 displays this message.
