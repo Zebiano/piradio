@@ -1,5 +1,5 @@
-.\" Manpage for the Menu in PiRadio.
-.\" Made by @Zebiano (https://github.com/Zebiano)
+.\" Manpage for the Main Menu in PiRadio.
+.\" Made by @Zebiano (https://github.com/Zebiano). English is not my first language, so please don't be too mean with me and my grammatical errors!
 .TH PiRadio 1 "11 August 2017" "1.0" "PiRadio man page"
 .SH NAME
 piradio \- Portable radio FM transmitter with custom features.
@@ -24,6 +24,8 @@ u) Check for updates
 .br
 o) Options
 .SH DESCRIPTION
+This is the main menu of the PiRadio. Here you can choose between the options given and it also shows some valuable inforamtion like he frequency used and the song that is currently playing. In order to keep these informations up-to-date, please remember to choose the "4) Update screen" option.
+.SH DESCRIPTION - OPTIONS
 .B Choose music 
 brings you to a new menu that lets you choose a song, playlist or artists to play in the current frequency. Note that this software only recognizes songs inside the /music folder. Check the help page on that menu for more.
 .br

@@ -1,0 +1,34 @@
+﻿.\" Manpage for the Music Loader in PiRadio.
+.\" Made by @Zebiano (https://github.com/Zebiano). English is not my first language, so please don't be too mean with me and my grammatical errors!
+.TH PiRadio 1 "11 August 2017" "1.0" "PiRadio man page"
+.SH NAME
+piradio \- Portable radio FM transmitter with custom features.
+.SH SYNOPSIS
+1) Download music through URL
+.br
+2) Convert .mp3 to .wav
+.br
+0) Exit MusicLoader
+.br
+h) Help
+.br
+.SH DESCRIPTION
+This is the MusicLoader. Here you can download or import new songs into your music folder. It's also possible to do this manually: naviagte to /piradio/music/ and put your songs in there. But remember that the PiRadio only reads .wav files (not .mp3). That being said, there's an option that lets you convert .mp3 into .wav. I don't recommend trying to convert the files yourself, there's a slight chance that the PiRadio doesn't recognize them only to say they're corrupted.
+.br
+.SH DESCRIPTION - OPTIONS
+.B Download music thorugh URL
+asks you for an URL of a video, song, playlist etc to download it, convert it to .wav format so the PiRadio can read and play it.
+.br
+.B Convert .mp3 to .wav 
+converts any song in .mp3 format into a playable .wav song for the PiRadio. Note that the .mp3 file has to be inside the /music/downloads folder.
+.br
+.B Exit PiRadio 
+quits PiRadio and stops any song playing at that moment.
+.br
+.B Help 
+displays this message.
+.br
+.SH EXAMPLES
+
+.SH AUTHOR
+Zebiano (https://github.com/Zebiano)

@@ -64,7 +64,7 @@ do
 
 	case $opPiradio in
 		h)
-			man $PiRadio_DIR/code/help_files/mainmenu
+			man $PiRadio_DIR/code/help_files/main_menu
 			continue
 			;;
 		u)
@@ -261,8 +261,7 @@ do
 				
 				case $opMusicloader in
 					h)
-						helpFile=music_loader.txt
-						helpFiles
+						man $PiRadio_DIR/code/help_files/music_loader
 						;;
 					0)
 						clear
