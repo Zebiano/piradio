@@ -175,8 +175,7 @@ do
 				
 				case $opOptions in
 					h)
-						helpFile=options.txt
-						helpFiles
+						man $PiRadio_DIR/code/help_files/options
 						;;
 					0)
 						clear

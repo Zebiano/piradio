@@ -1,0 +1,25 @@
+.\" Manpage for the Options Menu in PiRadio.
+.\" Made by @Zebiano (https://github.com/Zebiano). English is not my first language, so please don't be too mean with me and my grammatical errors!
+.TH PiRadio 1 "11 August 2017" "1.0" "PiRadio man page"
+.SH NAME
+piradio \- Portable radio FM transmitter with custom features.
+.SH SYNOPSIS
+1) Change frequency
+.br
+0) Exit PiRadio
+.br
+h) Help
+.br
+.SH DESCRIPTION
+This is the options menu of the PiRadio. Here you can set some settings that affect the software globally like for example changing the current frequency.
+.SH DESCRIPTION - OPTIONS
+.B Change frequency
+lets you change the current frequency that songs will be played. Keep in mind this does not affect already playing songs!
+.B Exit PiRadio 
+quits PiRadio and stops any song playing at that moment.
+.br
+.B Help 
+displays this message.
+.br
+.SH AUTHOR
+Zebiano (https://github.com/Zebiano)
