@@ -64,8 +64,7 @@ do
 
 	case $opPiradio in
 		h)
-			helpFile=main_menu.txt
-			helpFiles
+			man $PiRadio_DIR/code/help_files/mainmenu
 			continue
 			;;
 		u)
@@ -166,7 +165,7 @@ do
 				echo "Menu:"
 				echo "1 - Change frequency"
 				echo
-				echo "0 - Exit Updater"
+				echo "0 - Exit Options"
 				echo "h - Help"
 				echo
 				statusMessage

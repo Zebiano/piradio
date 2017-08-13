@@ -1,0 +1,61 @@
+.\" Manpage for the Menu in PiRadio.
+.\" Made by @Zebiano (https://github.com/Zebiano)
+.TH PiRadio 1 "11 August 2017" "1.0" "PiRadio man page"
+.SH NAME
+piradio \- Portable radio FM transmitter with custom features.
+.SH SYNOPSIS
+1) Choose music
+.br
+2) List music
+.br
+3) Load new music
+.br
+4) Update screen
+.br
+s) Stop de current song
+.br
+0) Exit PiRadio
+.br
+R) Restart PiRadio
+.br
+h) Help
+.br
+u) Check for updates
+.br
+o) Options
+.SH DESCRIPTION
+.B Choose music 
+brings you to a new menu that lets you choose a song, playlist or artists to play in the current frequency. Note that this software only recognizes songs inside the /music folder. Check the help page on that menu for more.
+.br
+.B List music 
+gives you a list of all the folders and songs in the root directory of the /music folder.
+.br
+.B Load new music 
+brings you to a new menu that lets you add/configure your songs. Check the help page on that menu for more.
+.br
+.B Update screen 
+refreshes the screen in order to update any missing/wrong information displayed on that menu.
+.br
+.B Stop the current song 
+stops the current song playing. Self-explanatory...
+.br
+.B Exit PiRadio 
+quits PiRadio and stops any song playing at that moment.
+.br
+.B Restart PiRadio 
+restarts de PiRadio. Self-explanatory as well...
+.br
+.B Help 
+displays this message.
+.br
+.B Check for updates 
+brings you to a new menu that lets you check for updates. Check the help page on that menu for more.
+.br
+.B Options 
+brings you to a new menu that lets you set a variety of options for this software. Check the help page on that menu for more.
+.SH BUGS
+All bugs listed below are being worked on. I dont guarantee a fix for every single one. If there are no bugs listed, be happy about it! :D
+.PP
+- While using "s) Stop the current song" the radio doesn't fully stop the current song. The song isn't being played anymore, though there's still a white noise playing on the radio.
+.SH AUTHOR
+Zebiano (https://github.com/Zebiano)

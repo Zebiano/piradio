@@ -292,13 +292,15 @@ helpFiles(){
 	printf " ${GREEN}Start of help file${NC} "
 	echo -n "------"
 	echo
-	less -FX $PiRadio_DIR/code/help_files/$helpFile
+	#less -FX $PiRadio_DIR/code/help_files/$helpFile
+	#more $PiRadio_DIR/code/help_files/$helpFile
+	man $PiRadio_DIR/code/help_files/mantest
 	echo
 	echo -n "-------"
 	printf " ${GREEN}End of help file${NC} "
 	echo "-------"
 	echo
-	printf "When you're done reading press ${GREEN}0${NC} to exit.\n"
+	printf "When you're done reading press ${GREEN}0${NC} to exit."
 	read -n1 opHelp
 	
 	while true
