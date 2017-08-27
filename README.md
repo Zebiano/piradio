@@ -10,8 +10,8 @@ Keep in mind that this is still being worked on, and later on I plan to redo it 
 
 ## Requirements:
 
-	- RaspberryPi 1, 2 or 3
-	- Antenna on Pin 4 (Check how to here: http://makezine.com/projects/raspberry-pirate-radio/)
+- RaspberryPi 1, 2 or 3
+- Antenna on Pin 4 (Check how to here: http://makezine.com/projects/raspberry-pirate-radio/)
 
 ## How to install:
 
