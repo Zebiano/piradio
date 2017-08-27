@@ -8,22 +8,28 @@ The core of my project is markondej's project (https://github.com/markondej/fm_t
 
 Keep in mind that this is still being worked on, and later on I plan to redo it all and use "dialog" (interface), but we all know how plans usually fail...
 
+## Requirements:
 
+	- RaspberryPi 1, 2 or 3
+	- Antenna on Pin 4 (Check how to here: http://makezine.com/projects/raspberry-pirate-radio/)
 
-Dependencies:
+## How to install:
 
-1) fm_transmitter (FM transmitter...)
-	- https://github.com/markondej/fm_transmitter
-2) youtube-dl (Download youtube videos and audios and much more)
-3) ffmpeg (Audio converter)
-4) screen (Full-screen window manager for terminals)
-5) mpg123 (mp3 to wav converter)
+Simply download this repository and put it inside your RaspberryPi. Recommended is on the Desktop, but it should work everywhere...
 
+## Instructions:
+
+In order to run the PiRadio, you have to open a terminal window and navigate to the PiRadios's location (~/piradio) and then write `sudo sh piradio.sh`.
+It will load up and ask you for the frequency you want your songs to play at. Enter your desired frequency. Afterwards you'll be at the main menu.
+Here you can choose one of the options given by entering its number (for example, if you type `h`, the Help-page will open). 
 
 
 To-dos:
 
 1) Create an uninstaller
+2) Option to skip song
+3) Create it all in dialog
+4) Check if dependencies are installed on first boot and if not automatically install them
 
 
 –--- WORK IN PROGRESS -----
@@ -44,3 +50,18 @@ III) If you wanted to download a song from soundcloud (in this case “Tcahmi - 
 
 2) Convert .mp3 to .wav
 Here you can convert songs manually. Simply put your .mp3 files into the downloads folder inside /piradio/music and choose this option to start converting. If there's no downloads folder, create one yourself please and name it “downloads”. After converting, the .wav files will automatically be moved into the /piradio/music folder. There you can order them the way you want.
+
+
+Dependencies:
+All these are installable through the software itself. Launch PiRadio and they should install automatically. If not go to the “options” menu and install them there.
+
+1) fm_transmitter (FM transmitter...)
+	- https://github.com/markondej/fm_transmitter
+2) youtube-dl (Download youtube videos and audios and much more)
+	- https://rg3.github.io/youtube-dl/
+3) ffmpeg (Audio converter)
+	- https://www.ffmpeg.org/
+4) screen (Full-screen window manager for terminals)
+	- https://www.gnu.org/software/screen/manual/screen.html
+5) mpg123 (mp3 to wav converter)
+	- https://www.mpg123.de
