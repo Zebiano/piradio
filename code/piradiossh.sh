@@ -42,7 +42,7 @@ do
 
 	# MENU
 	echo "Menu:"
-	echo "1 - Choose music"
+	echo "1 - Play music"
 	echo "2 - List music"
 	echo "3 - Load new music"
 	echo "4 - Update screen"

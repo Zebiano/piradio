@@ -4,7 +4,7 @@
 .SH NAME
 piradio \- Portable radio FM transmitter with custom features.
 .SH SYNOPSIS
-1) Choose music
+1) Play music
 .br
 2) List music
 .br
@@ -26,7 +26,7 @@ o) Options
 .SH DESCRIPTION
 This is the main menu of the PiRadio. Here you can choose between the options given and it also shows some valuable inforamtion like he frequency used and the song that is currently playing. In order to keep these informations up-to-date, please remember to choose the "4) Update screen" option.
 .SH DESCRIPTION - OPTIONS
-.B Choose music 
+.B Play music 
 brings you to a new menu that lets you choose a song, playlist or artists to play in the current frequency. Note that this software only recognizes songs inside the /music folder. Check the help page on that menu for more.
 .br
 .B List music 
