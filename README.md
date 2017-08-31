@@ -22,7 +22,7 @@ Simply download this repository and put it inside your RaspberryPi. Recommended 
 In order to run the PiRadio, you have to open a terminal window and navigate to the PiRadios's location (~/piradio) and then write `sudo sh piradio.sh`.
 It will load up and ask you for the frequency you want your songs to play at. Enter your desired frequency. Afterwards you'll be at the main menu. Each menu works the same way: you press one of the options to perform them.
 
-If you need any help at the menus, just hit `h` and a man-page should pop up. In case you still don't have your desired answered feel free to ask it on github!
+If you need any help at the menus, just hit `h` and a man-page should pop up. In case you still don't have your desired answer feel free to ask it on github!
 
 
 To-dos:
