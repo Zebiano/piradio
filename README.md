@@ -11,11 +11,11 @@ Keep in mind that this is still being worked on, and later on I plan to redo it 
 ## Requirements:
 
 - RaspberryPi 1, 2 or 3
-- Antenna on Pin 4 (Check how to here: http://makezine.com/projects/raspberry-pirate-radio/)
+- Antenna on Pin 4 (Check how to here on step 1: http://makezine.com/projects/raspberry-pirate-radio/)
 
 ## How to install:
 
-Simply download this repository and put it inside your RaspberryPi. Recommended is on the Desktop, but it should work everywhere...
+Simply download this repository and put it inside your RaspberryPi. Recommended is on the Desktop, but it should work elsewhere...
 
 ## Instructions:
 
@@ -24,6 +24,15 @@ It will load up and ask you for the frequency you want your songs to play at. En
 
 If you need any help at the menus, just hit `h` and a man-page should pop up. In case you still don't have your desired answer feel free to ask it on github!
 
+## Examples:
+
+1. Play a song:
+	In order to play a song, you need to be at the main menu and enter the 	“Play music” menu. From there on you'll have a list of songs and playlists 	available to play, just write one of the names of it to start playing that 	song/playlist. Try writing `star_wars`!
+
+2. Load/Download new songs:
+	Start at the main menu and navigate into the “Load new music” menu. From 	there on you can download new songs or playlists. If you have a URL of a 	playlist or a song choose the designated option for it. When asked for the 	URL, insert a link of any available website that is listed here: 	https://rg3.github.io/youtube-dl/supportedsites.html Soon you'll have the 	song(s) in your music folder. Download times depend on your internet speed 	and might be different for everyone. After it's done, you should be able 	to play the song through the first example in this README file.
+
+	In case you have your songs downloaded already and just want to play them, 	put them inside the piradio/music folder. Keep in mind that the PiRadio 	only reads `.wav` files (not .mp3). That being said, there's an option 	that lets you convert `.mp3` into `.wav`. I don't recommend trying to 	convert the files yourself, there's a slight chance that the PiRadio 	doesn't recognize them only to say they're corrupted.
 
 To-dos:
 
@@ -41,14 +50,6 @@ This is the MusicLoader. Here you can download or import new songs into your mus
 1) Download music through URL (can also be a playlist)
 This option lets you download .mp3 files of basically anything since youtube-dl has a variety of supported sites. When asked for the URL, insert a link of any available website that is listed here:
 	https://rg3.github.io/youtube-dl/supportedsites.html
-
-Examples:
-I) If you wanted to download a song from a youtube video (in this case “Tobu – Hope”), you would simply insert the youtube link of the video:
-	https://www.youtube.com/watch?v=EP625xQIGzs
-II) If you wanted to download a youtube playlist (in this case “global 50”), you would simply insert the youtube link of the playlist:
-	https://www.youtube.com/playlist?list=PLgzTt0k8mXzEk586ze4BjvDXR7c-TUSnx
-III) If you wanted to download a song from soundcloud (in this case “Tcahmi - siaw”), you would simply insert the soundcloud link of the song:
-	https://soundcloud.com/iamtchami/tchami-siaw
 
 2) Convert .mp3 to .wav
 Here you can convert songs manually. Simply put your .mp3 files into the downloads folder inside /piradio/music and choose this option to start converting. If there's no downloads folder, create one yourself please and name it “downloads”. After converting, the .wav files will automatically be moved into the /piradio/music folder. There you can order them the way you want.
