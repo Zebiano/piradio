@@ -5,10 +5,16 @@
 . code/piradio.conf
 
 clear
-
-# CD TO DIR AND MAKE
 echo "Loading..."
 
+packageName="youtube-dl"
+checkForSoftware
+packageName="lame"
+checkForSoftware
+packageName="mpg123"
+checkForSoftware
+#packageName="dialog"
+#checkForSoftware
 # SET VARIABLES TO FALSE
 SM_invalid=false
 SM_updaterFinished=false
@@ -17,8 +23,10 @@ SM_finishDownload=false
 SM_finishConvert=false
 SM_changedFrequency=false
 getDir
+# CD TO DIR AND MAKE
 cd $PiRadio_DIR/fm_transmitter-master
 make >/dev/null
+
 echo "Load successful!"
 sleep 0.5
 clear

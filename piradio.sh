@@ -10,12 +10,8 @@ trap PiRadioExit 0 1 2 5 15	 # TRAP Control C TO DELETE TEMPORARY FILES IF NECES
 var=$(id -u)
 if [ "$var" -eq 0 ]
 then
-	#if [ PiRadio_softwaresInstalled = true ] 
-	#then
-		#screen -m -S PiRadioSSH code/piradiossh.sh
-	#else
-		#checkSoftware
-	#fi
+	packageName="screen"
+	checkForSoftware
 	sudo screen -m -S PiRadioSSH code/piradiossh.sh
 else
 	clear

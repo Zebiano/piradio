@@ -149,7 +149,6 @@ downloadURL(){
 	echo "Downloading your video and saving MP3 only..."
 	echo
 	youtube-dl --extract-audio --yes-playlist --audio-format mp3 --output "$TEMP_DIR/%(title)s.%(ext)s" $url
-	sleep 0.5
 	conMP3toWAV
 }
 
@@ -265,7 +264,7 @@ updater(){
 		sleep 1
 	}
 	UP_screen(){
-		apt-get install screen
+		sudo apt-get --force-yes --yes install screen
 		sleep 1
 	}
 	UP_fm_transmitter(){
@@ -277,14 +276,30 @@ updater(){
 		sleep 5
 	}
 	UP_mpg123(){
-		apt-get install mpg123
+		sudo apt-get --force-yes --yes install mpg123
 		sleep 1
 	}
 	UP_dialog(){
-		apt-get install dialog
+		#sudo apt-get --force-yes --yes install dialog
 		sleep 1
 	}
 }
+
+checkForSoftware(){
+	packageInstalled=$(dpkg-query -W --showformat='${Status}\n' "$packageName"|grep "install ok installed")
+	echo "Checking for $packageName: $packageInstalled"
+	if [ "$packageInstalled" = "" ]
+	then
+		echo "$packageName is not installed. Installing it now..."
+		sleep 3
+		sudo apt-get --force-yes --yes install "$packageName"
+	fi
+	packageName=
+}
+
+#checkFor_ffmpeg(){
+	
+#}
 
 helpFiles(){
 	clear
