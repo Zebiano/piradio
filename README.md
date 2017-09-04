@@ -45,15 +45,8 @@ To-dos:
 4) Check if dependencies are installed on first boot and if not automatically install them
 5) When hitting “s” to stop the current song and/or “0” to exit PiRadio, there will still be white noise on the radio if a song started playing earlier
 
-
-–--- WORK IN PROGRESS -----
-
-2) Convert `.mp3` to `.wav`
-Here you can convert songs manually. Simply put your .mp3 files into the downloads folder inside /piradio/music and choose this option to start converting. If there's no downloads folder, create one yourself please and name it “downloads”. After converting, the `.wav` files will automatically be moved into the /piradio/music folder. There you can order them the way you want.
-
-
 Dependencies:
-All these are installable through the software itself. Launch PiRadio and they should install automatically. If not go to the “options” menu and install them there.
+All these are installable through the software itself. Launch PiRadio and they should install automatically. If not, go to the “options” menu and install them there.
 
 1) fm_transmitter (FM transmitter...)
 	- https://github.com/markondej/fm_transmitter
