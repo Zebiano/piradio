@@ -27,12 +27,15 @@ If you need any help at the menus, just hit `h` and a man-page should pop up. In
 ## Examples:
 
 1. Play a song:
-	In order to play a song, you need to be at the main menu and enter the 	“Play music” menu. From there on you'll have a list of songs and playlists 	available to play, just write one of the names of it to start playing that 	song/playlist. Try writing `star_wars`!
+	- In order to play a song, you need to be at the main menu and enter the “Play music” menu. From there on you'll have a list of songs and playlists available to play, just write one of the names of it to start playing that song/playlist. Try writing `star_wars`!
 
 2. Load/Download new songs:
-	2.1. Start at the main menu and navigate into the “Load new music” menu. 	From there on you can download new songs or playlists. If you have a URL 	of a playlist or a song choose the designated option for it. When asked 	for the URL, insert a link of any available website that is listed here: 	https://rg3.github.io/youtube-dl/supportedsites.html Soon you'll have the 	song(s) in your music folder. Download times depend on your internet speed 	and might be different for everyone. After it's done, you should be able 	to play the song through the first example in this README file.
+	- Start at the main menu and navigate into the “Load new music” menu. From there on you can download new songs or playlists. 	If you have a URL of a 	playlist or a song choose the designated option for it. When asked for the URL, insert a link of any 	available website that is listed here: https://rg3.github.io/youtube-dl/supportedsites.html Soon you'll have the song(s) in your music folder. Download times depend on your internet speed and might be different for everyone. After it's done, you should be able to play the song through the first example in this README file.
 
-	2.2 In case you have your songs downloaded already and just want to play 	them, put them inside the piradio/music folder. Keep in mind that the 	PiRadio only reads `.wav` files (not `.mp3`). That being said, there's 	an option that lets you convert `.mp3` into `.wav`. I don't recommend 	trying to convert the files yourself, there's a slight chance that the 	PiRadio doesn't recognize them only to say they're corrupted.
+	- In case you have your songs downloaded already and just want to play them, put them inside the piradio/music folder. Keep in mind that the PiRadio only reads `.wav` files (not `.mp3`). That being said, there's an option that lets you convert `.mp3` into `.wav` covered in the next example. I don't recommend trying to convert the files yourself, there's a slight chance that the PiRadio doesn't recognize them only to say they're corrupted.
+	
+3. Convert `.mp3` to `.wav`
+	- Here you can convert songs manually. Simply put your .mp3 files into the downloads folder inside /piradio/music and choose this option to start converting. If there's no downloads folder, create one yourself please and name it “downloads”. After converting, the `.wav` files will automatically be moved into the /piradio/music folder. There you can order them the way you want.
 
 To-dos:
 
@@ -45,14 +48,8 @@ To-dos:
 
 –--- WORK IN PROGRESS -----
 
-This is the MusicLoader. Here you can download or import new songs into your music folder. It's also possible to do this manually: naviagte to /piradio/music/ and put your songs in there. But remember that the PiRadio only reads .wav files (not .mp3). That being said, there's an option that lets you convert .mp3 into .wav. I don't recommend trying to convert the files yourself, there's a slight chance that the PiRadio doesn't recognize them only to say they're corrupted.
-
-1) Download music through URL (can also be a playlist)
-This option lets you download .mp3 files of basically anything since youtube-dl has a variety of supported sites. When asked for the URL, insert a link of any available website that is listed here:
-	https://rg3.github.io/youtube-dl/supportedsites.html
-
-2) Convert .mp3 to .wav
-Here you can convert songs manually. Simply put your .mp3 files into the downloads folder inside /piradio/music and choose this option to start converting. If there's no downloads folder, create one yourself please and name it “downloads”. After converting, the .wav files will automatically be moved into the /piradio/music folder. There you can order them the way you want.
+2) Convert `.mp3` to `.wav`
+Here you can convert songs manually. Simply put your .mp3 files into the downloads folder inside /piradio/music and choose this option to start converting. If there's no downloads folder, create one yourself please and name it “downloads”. After converting, the `.wav` files will automatically be moved into the /piradio/music folder. There you can order them the way you want.
 
 
 Dependencies:
