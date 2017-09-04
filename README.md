@@ -37,7 +37,7 @@ If you need any help at the menus, just hit `h` and a man-page should pop up. In
 3. Convert `.mp3` to `.wav`
 	- Here you can convert songs manually. Simply put your .mp3 files into the downloads folder inside /piradio/music and choose this option to start converting. If there's no downloads folder, create one yourself please and name it “downloads”. After converting, the `.wav` files will automatically be moved into the /piradio/music folder. There you can order them the way you want.
 
-To-dos:
+## To-dos:
 
 1) Create an uninstaller
 2) Option to skip song
