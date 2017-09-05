@@ -46,7 +46,7 @@ If you need any help at the menus, just hit `h` and a man-page should pop up. In
 5) When hitting `s` to stop the current song and/or “0” to exit PiRadio, there will still be white noise on the radio if a song started playing earlier
 6) Ffmpeg installer might not work because it has to be compiled with lame support, gotta find a way to fix that
 
-Dependencies:
+## Dependencies:
 All these are installable through the software itself. Launch PiRadio and they should install automatically. If not, go to the “options” menu and install them there.
 
 1) fm_transmitter (FM transmitter...)
