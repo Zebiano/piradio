@@ -4,7 +4,7 @@ Welcome!
 
 This is a little project that turns the Pi 3 into an FM Radio Transmitter.
 
-The core of my project is markondej's project (https://github.com/markondej/fm_transmitter) to turn the Pi into a transmitter. But I felt that there should be an easier way to choose songs to play, stop the radio, etc so I decided to make a little interface for it. It should be pretty straight-forward, and I'm working on help files as well.
+The core of my project is [markondej's project] (https://github.com/markondej/fm_transmitter) to turn the Pi into a transmitter. But I felt that there should be an easier way to choose songs to play, stop the radio, etc so I decided to make a little interface for it. It should be pretty straight-forward, and I'm working on help files as well.
 
 Keep in mind that this is still being worked on, and later on I plan to redo it all and use "dialog" (interface), but we all know how plans usually fail...
 
@@ -39,12 +39,12 @@ If you need any help at the menus, just hit `h` and a man-page should pop up. In
 
 ## To-dos:
 
-1) Create an uninstaller
-2) Option to skip song
-3) Create it all in dialog
-4) Check if dependencies are installed on first boot and if not automatically install them
-5) When hitting `s` to stop the current song and/or “0” to exit PiRadio, there will still be white noise on the radio if a song started playing earlier
-6) Ffmpeg installer might not work because it has to be compiled with lame support, gotta find a way to fix that
+- [] Create an uninstaller
+- [] Option to skip song
+- [] Create it all in dialog
+- [x] Check if dependencies are installed on first boot and if not automatically install them
+- [] When hitting `s` to stop the current song and/or “0” to exit PiRadio, there will still be white noise on the radio if a song started playing earlier
+- [] Ffmpeg installer might not work because it has to be compiled with lame support, gotta find a way to fix that
 
 ## Dependencies:
 All these are installable through the software itself. Launch PiRadio and they should install automatically. If not, go to the “options” menu and install them there.
