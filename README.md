@@ -12,6 +12,7 @@ Keep in mind that this is still being worked on, and later on I plan to redo it 
 
 - RaspberryPi 3 (maybe 1 and 2 work as well)
 - Antenna on Pin 4 (Check how to here on step 1: http://makezine.com/projects/raspberry-pirate-radio/)
+- Dependecies. Warning: this will automatically try to install dependencies if they're not found. Check the "Dependencies" tab to find out if they will interfere with any other project you have that uses some or all of them!
 
 ## How to install:
 
