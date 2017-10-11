@@ -43,6 +43,7 @@ If you need any help at the menus, just hit `h` and a man-page should pop up. In
 - [ ] Option to skip song
 - [ ] Create it all in dialog
 - [x] Check if dependencies are installed on first boot and if not automatically install them
+- [ ] Add option to allow check for dependencies
 - [ ] When hitting `s` to stop the current song and/or “0” to exit PiRadio, there will still be white noise on the radio if a song started playing earlier
 - [ ] Ffmpeg installer might not work because it has to be compiled with lame support, gotta find a way to fix that
 
