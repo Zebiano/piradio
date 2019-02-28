@@ -4,7 +4,7 @@ Welcome!
 
 This is a little project that turns the Pi 3 into an FM Radio Transmitter.
 
-The core of my project is [markondej's project] (https://github.com/markondej/fm_transmitter) to turn the Pi into a transmitter. But I felt that there should be an easier way to choose songs to play, stop the radio, etc so I decided to make a little interface for it. It should be pretty straight-forward, and I'm working on help files as well.
+The core of my project is [markondej's project](https://github.com/markondej/fm_transmitter) to turn the Pi into a transmitter. But I felt that there should be an easier way to choose songs to play, stop the radio, etc so I decided to make a little interface for it. It should be pretty straight-forward, and I'm working on help files as well.
 
 Keep in mind that this is still being worked on, and later on I plan to redo it all and use "dialog" (interface), but we all know how plans usually fail...
 
@@ -36,7 +36,7 @@ If you need any help at the menus, just hit `h` and a man-page should pop up. In
 	- In case you have your songs downloaded already and just want to play them, put them inside the piradio/music folder. Keep in mind that the PiRadio only reads `.wav` files (not `.mp3`). That being said, there's an option that lets you convert `.mp3` into `.wav` covered in the next example. I don't recommend trying to convert the files yourself, there's a slight chance that the PiRadio doesn't recognize them only to say they're corrupted.
 	
 3. Convert `.mp3` to `.wav`
-	- Here you can convert songs manually. Simply put your .mp3 files into the downloads folder inside /piradio/music and choose this option to start converting. If there's no downloads folder, create one yourself please and name it “downloads”. After converting, the `.wav` files will automatically be moved into the /piradio/music folder. There you can order them the way you want.
+	- Here you can convert songs manually. Simply put your .mp3 files into the downloads folder inside /piradio/music and choose this option to start converting. If there's no downloads folder, create one yourself and name it “downloads”. After converting, the `.wav` files will automatically be moved into the /piradio/music folder. There you can order them the way you want.
 
 ## To-dos:
 
